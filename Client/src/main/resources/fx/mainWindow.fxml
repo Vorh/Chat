@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="659.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TextArea fx:id="fieldText" layoutX="14.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="294.0" prefWidth="437.0" styleClass="fieldText" stylesheets="@style.css" />
+      <TextArea fx:id="enterText" layoutX="14.0" layoutY="373.0" prefHeight="55.0" prefWidth="437.0" styleClass="enterText" stylesheets="@style.css" />
+      <Button fx:id="enterBut" layoutX="462.0" layoutY="385.0" mnemonicParsing="false" onAction="#enter" prefHeight="31.0" prefWidth="84.0" styleClass="but1" text="Отправить">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ваше имя" />
+      <TextArea fx:id="yourName" layoutX="76.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="31.0" prefWidth="103.0" styleClass="yourName" stylesheets="@style.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="512.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <ListView fx:id="listUsers" layoutX="465.0" layoutY="64.0" prefHeight="294.0" prefWidth="162.0" styleClass="listUsers" stylesheets="@style.css" />
+      <Button fx:id="butExit" layoutX="570.0" layoutY="385.0" mnemonicParsing="false" onAction="#buttonExit" prefHeight="31.0" styleClass="but" text="Выход">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="iconList" fitHeight="30.0" fitWidth="30.0" layoutX="476.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" styleClass="icon3" />
+   </children>
+</AnchorPane>

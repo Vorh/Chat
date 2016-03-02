@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="enterPane" prefHeight="200.0" prefWidth="200.0" styleClass="MainPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TextArea fx:id="con_Login" layoutX="32.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="138.0" styleClass="fieldText" />
+      <Button fx:id="butRegister" layoutX="70.0" layoutY="123.0" mnemonicParsing="false" onAction="#buttonRegister" prefHeight="25.0" prefWidth="59.0" styleClass="but1" text="Enter" visible="false" />
+      <Button fx:id="butConnect" layoutX="70.0" layoutY="123.0" mnemonicParsing="false" onAction="#buttonConnection" styleClass="but1" text="Connect">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="82.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="backMenu" layoutX="80.0" layoutY="156.0" mnemonicParsing="false" onAction="#backMenu" styleClass="but" text="Back" visible="false" />
+      <Button fx:id="registerNewUser" layoutX="38.0" layoutY="156.0" mnemonicParsing="false" onAction="#registerNewUser" styleClass="but" text="Registrer new user">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="con_Pas" layoutX="31.0" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="141.0" styleClass="fieldTextSimple" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="icon2" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" styleClass="icon1" />
+   </children>
+</Pane>
